@@ -2,7 +2,7 @@
 #define GPS_TOOL_H
 #include<iostream>
 #include<string>
-#include "Constants.h"
+#include "Constans.h"
 #include"Struct_Data.h"
 #include <cmath>
 #include<vector>
@@ -67,7 +67,7 @@ public:
     Point_2D(const Point_2D &); //Конструктор копирования точки
     Point_2D &operator=(const Point_2D &); //оператор присватвания
 
-    //Point_2D(const Point_2D &&) = delete ;//не исполюзовать конструктор копирования rvalue
+   // Point_2D(const Point_2D &&) = delete ;//не исполюзовать конструктор копирования rvalue
     Point_2D &operator=(const Point_2D &&) = delete ;//не исполюзовать оператор присваивания rvalue
 
     const Latidude &latidude() const ; //функция возврата координат долготы
@@ -129,7 +129,7 @@ namespace Common
           /
          .p3
        */
-       double courseAzimuth(const Point_2D&, const Point_2D&, const Point_2D&);//функция вычисления азимута
+    double courseAzimuth(const Point_2D&, const Point_2D&, const Point_2D&);//функция вычисления азимута
 
 }
 /*
@@ -196,7 +196,7 @@ private:
               second = ~225
     */
     std::vector<std::pair<double, double> > mAzimuths;//вектор хранения азимута
-    std::vector<double>                     mDistances;//вектор хранения дистенций
+    std::vector<double>                     mDistances;//вектор хранения дистанций
     std::vector<Point_2D>                    mPoints;//вектор точек координат
 };
 

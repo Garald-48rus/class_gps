@@ -28,6 +28,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
+    Constans.h \
     Constants.h \
     Struct_Data.h \
     gps_tool.h

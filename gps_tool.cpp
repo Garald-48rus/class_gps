@@ -169,7 +169,7 @@ Latidude::Latidude(double Adegree) :mPoint{Adegree, 'S'}
 
 Latidude::Latidude(const Latidude &Other) :mPoint{Other.mPoint.degre , Other.mPoint.ch}
 {
-     std::cout << "Констуктор копирования" << std::endl;
+     //std::cout << "Констуктор копирования" << std::endl;
 }
 //-----------------------------//операторор присваивания----------------------------------------------------
 
@@ -227,7 +227,7 @@ Longitude::Longitude(double Adegree)  :mPoint{Adegree, 'W'}
 
 Longitude::Longitude(const Longitude &Other) :mPoint{Other.mPoint.degre , Other.mPoint.ch}
 {
- std::cout << "Констуктор копирования" << std::endl;
+ //std::cout << "Констуктор копирования" << std::endl;
 }
 
 //----------------------------//операторор присваивания---------------------------------------------------
@@ -511,7 +511,7 @@ const double &TrackPoints2D::distance()const
 {
     return mDistance;
 }
-
+}
 /*
 The formula for heading between two lat/long coords is:
 =atan2(cos(lat1)*sin(lat2)-sin(lat1)*cos(lat2)*cos(lon2-lon1), sin(lon2-lon1)*cos(lat2))
